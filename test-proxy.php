@@ -1,5 +1,7 @@
 <?php
 
+echo "hello how r you";
+/*
 $url='https://sangharileuk.ct.ws';//api endpoint url
 $ch=curl_init();
 curl_setopt_array($ch,[
@@ -17,4 +19,6 @@ echo $result;
 
 
 curl_close($ch);
+
+*/
 ?>
