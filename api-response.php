@@ -1,4 +1,7 @@
 <?php
+
+print_r($_SERVER);
+
 $r=parse_url(substr($_SERVER['REQUEST_URI'],1),PHP_URL_PATH);
 $array_page=explode('/',$r);
 if(count($array_page)<=2):
@@ -8,6 +11,8 @@ else:
 list($root_folder,$page,$request_id)=explode('/',$r);	//print_r($r);
 endif;
 
+
+
 if($page!='api' || count($array_page)>3 )
 {
 
@@ -16,6 +21,8 @@ exit;
 
 }
 
+
+echo "hello world";
 $url='https://randomuser.me/api';//api endpoint url
 /*$reponse_headers=array();
 $header_callback=function($ch1,$header) use(&$reponse_headers){
@@ -29,9 +36,11 @@ return strlen($header);
 $reponse_headers[$parts[0]]=trim($parts[1]);
 
 return strlen($header);
-};*/
+};
 
 
+
+/*
 
 header('Content-Type: application/json');
 $ch=curl_init();
@@ -57,5 +66,5 @@ curl_close($ch);
 //echo "hello world";
 //print_r($path)
 
-
+*/
 ?>

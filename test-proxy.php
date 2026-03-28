@@ -1,8 +1,8 @@
 <?php
 
-echo "hello how r you";
-/*
-$url='https://sangharileuk.ct.ws';//api endpoint url
+//echo "hello how r you";
+
+$url='https://php-api-cs2d.onrender.com/api/123';//api endpoint url
 $ch=curl_init();
 curl_setopt_array($ch,[
 CURLOPT_URL=>$url,
@@ -20,5 +20,5 @@ echo $result;
 
 curl_close($ch);
 
-*/
+
 ?>
