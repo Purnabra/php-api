@@ -1,6 +1,6 @@
 <?php
 
-print_r($_SERVER);
+//print_r($_SERVER);
 
 $r=parse_url(substr($_SERVER['REQUEST_URI'],1),PHP_URL_PATH);
 $array_page=explode('/',$r);
