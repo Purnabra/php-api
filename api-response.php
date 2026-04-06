@@ -139,7 +139,7 @@ $res=mysqli_query($conn,$sql);
 $numrows=mysqli_num_rows($res);
 if($numrows>0)
 {
-$sqlm="UPDATE `pp_call_api` SET `name`='".$email."',`email`='".$name."',`password`='".$password."' WHERE `id`='".mysqli_real_escape_string($conn,trim($request_id))."'";
+$sqlm="UPDATE `pp_call_api` SET `name`='".$name."',`email`='".$email."',`password`='".$password."' WHERE `id`='".mysqli_real_escape_string($conn,trim($request_id))."'";
 $resm=mysqli_query($conn,$sqlm);
 if($resm){
 echo json_encode(['status'=>true,'msg'=>'Data Updated Successfully!!']);
